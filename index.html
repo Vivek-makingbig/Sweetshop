@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Naviagtion bar  -->
+    <div id="navbar">
+        <div id="logo"><img src="image/logo.jpg"></div>
+        <div id="search"><input type="text" placeholder="Search..." id="searchinput"></div>
+        <div id="login"><button><img src="image/login.svg"></button></div>
+        <div id="cart"><button id="viewCart">View Cart</button>
+        </div>
+    </div>
+    <!-- Box 1  here we shall welcome our customers and display a video-->
+    <div id="welcomebox">
+        
+            <img src="image/background.jpg" alt="welocme">
+        
+    </div>
+    <!-- Contact form  -->
+    <div id="contactbox">
+        Name:<input type="text" class="inputdetails" placeholder="Enter your full name">
+        Email:<input type="text" class="inputdetails" placeholder="Enter your email">
+        Phone no.:<input type="number" class="inputdetails" placeholder="Enter phone number">
+        Address : <input type="text" class="inputdetails" placeholder="Enter your Address">
+        <button id="submit">Submit</button>
+    </div>
+    <!-- Our items box  -->
+    <div id="itemsbox">
+        <div class="item">
+            <div class="imagebox">
+                <img src="image/jilebi.jpg" alt="jilebi">
+            </div>
+            <div id="btn">
+                <div class="price">
+                    Rs.7
+                </div>
+                <button class="ordernow">Order</button>
+                <input type="number" class="quantity" min="1" value="1">
+            </div>
+        </div>
+        <div class="item">
+            <div class="imagebox">
+                <img src="image/kachori.jpg" alt="kachori">
+            </div>
+            <div id="btn">
+                <div class="price">
+                    Rs.7
+                </div>
+                <button class="ordernow">Order</button>
+                <input type="number"  class="quantity" min="1" value="1">
+            </div>
+        </div>
+        <div class="item">
+            <div class="imagebox">
+                <img src="image/lado.jpg" alt="lado">
+            </div>
+            <div id="btn">
+                <div class="price">
+                    Rs.10
+                </div>
+                <button class="ordernow">Order</button>
+                <input type="number"  class="quantity" min="1" value="1">
+            </div>
+        </div>
+        <div class="item">
+            <div class="imagebox">
+                <img src="image/rashmalai.jpg" alt="rashmalai">
+            </div>
+            <div id="btn">
+                <div class="price">
+                    Rs.15
+                </div>
+                <button class="ordernow">Order</button>
+                <input type="number"  class="quantity" min="1" value="1">
+            </div>
+        </div>
+        <div class="item">
+            <div class="imagebox">
+                <img src="image/samosa.jpg" alt="samosa">
+            </div>
+            <div id="btn">
+                <div class="price">
+                    Rs.8
+                </div>
+                <button class="ordernow">Order</button>
+                <input type="number"  class="quantity" min="1" value="1">
+            </div>
+        </div>
+        <div class="item">
+            <div class="imagebox">
+                <img src="image/tea.jpg" alt="tea">
+            </div>
+            <div id="btn">
+                <div class="price">
+                    Rs.10
+                </div>
+                <button class="ordernow">Order</button>
+                <input type="number"  class="quantity" min="1" value="1">
+            </div>
+        </div>
+        <div class="item">
+            <div class="imagebox">
+                <img src="image/petha.jpg" alt="petha">
+            </div>
+            <div id="btn">
+                <div class="price">
+                    Rs.10
+                </div>
+                <button class="ordernow">Order</button>
+                <input type="number"  class="quantity" min="1" value="1">
+            </div>
+        </div>
+        <div class="item">
+            <div class="imagebox">
+                <img src="image/sandes.jpg" alt="petha">
+            </div>
+            <div id="btn">
+                <div class="price">
+                    Rs.7
+                </div>
+                <button class="ordernow">Order</button>
+                <input type="number"  class="quantity" min="1" value="1">
+            </div>
+        </div>
+        <div class="item">
+            <div class="imagebox">
+                <img src="image/kalakant.jpg" alt="kalakant">
+            </div>
+            <div id="btn">
+                <div class="price">
+                    Rs.10
+                </div>
+                <button class="ordernow">Order</button>
+                <input type="number"  class="quantity" min="1" value="1">
+            </div>
+        </div>
+        <div class="item">
+            <div class="imagebox">
+                <img src="image/chamcham.jpg" alt="chamcham">
+            </div>
+            <div id="btn">
+                <div class="price">
+                    Rs.18
+                </div>
+                <button class="ordernow">Order</button>
+                <input type="number" class="quantity" min="1" value="1">
+            </div>
+        </div>
+        <div class="item">
+            <div class="imagebox">
+                <img src="image/barfi.jpg" alt="barfi">
+            </div>
+            <div id="btn">
+                <div class="price">
+                    Rs.10
+                </div>
+                <button class="ordernow">Order</button>
+                <input type="number"  class="quantity" min="1" value="1">
+            </div>
+        </div>
+        <div class="item">
+            <div class="imagebox">
+                <img src="image/rashogola.jpg" alt="rashogola">
+            </div>
+            <div id="btn">
+                <div class="price">
+                    Rs.10
+                </div>
+                <button class="ordernow">Order</button>
+                <input type="number"  class="quantity" min="1" value="1">
+            </div>
+        </div>
+
+    </div>
+    <!-- Cart Box (Initially Hidden) -->
+    <div id="cartbox">
+        <h2>Shopping Cart</h2>
+        <div id="cartItems"></div>  <!-- Make sure this exists -->
+        <p id="totalPrice">Total: Rs.0</p>
+        <button id="closeCart">Close Cart</button>
+    </div>
+    
+
+    <!-- Testimonials given by our customers  -->
+    <div id="testimonials">
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+        <div class="reviewbox"></div>
+    </div>
+    <!-- Our footer section  -->
+    <div id="footer">
+        <h3>Location: 2/3 Raja Manindra babu lane, gopalchand road, kolkata-700089</h3>
+        <h3 id="copyright"><br>Official website , Copyright © 2012</h3>
+    </div>
+    <!-- Javascript of the welcome video  -->
+    <script src="script.js"></script>
+</body>
+</html>

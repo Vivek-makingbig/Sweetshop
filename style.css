@@ -1,0 +1,235 @@
+body {
+    background-color: #faebd766;
+    z-index: -1;
+}
+#navbar {
+    height: 70px;
+    width: 99%;
+    margin: auto;
+    background-color: rgb(241, 238, 238);
+    display: inline-flex;
+
+}
+
+#logo {
+    display: flex;
+    margin-left: 21px;
+    margin-top: 3px;
+    border: 2px solid red;
+    height: 50px;
+    width: 150px;
+    padding: 2px;
+}
+
+#logo img {
+    height: 50px;
+    width: 150px;
+}
+
+#search {
+    margin-left: 44px;
+    display: flex;
+    margin-top: 19px;
+    margin-bottom: 15px;
+
+}
+
+#searchinput {
+    font-size: larger;
+    display: flex;
+    width: 424px;
+    border-radius: 5px;
+}
+
+
+
+#login {
+    margin-left: 314px;
+    display: flex;
+    margin-top: 10px;
+    height: 40px;
+
+}
+#cart{
+    margin-top: 10px;
+    width: 68px;
+    border: 3px solid red;
+    height: 37px;
+    margin-left: 10px;
+}
+
+#cartbox {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background: white;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: rgb(193, 193, 73);
+    box-shadow: 0px 0px 10px gray;
+    text-align: center;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#closeCart {
+    background: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* Designing the welcome box  */
+#welcomebox {
+    display: flex;
+    height: 500px;
+    width: 99%;
+    margin-top: 45px;
+    border: 3px solid green;
+    justify-content: center;
+}
+
+/* Designing the video box of the welcome box  */
+#img {
+    width: 99%;
+    
+}
+
+/* Designing the contact box  */
+#contactbox {
+    display: flex;
+    margin-top: 60px;
+    border: 2px solid red;
+    height: 113px;
+    padding: 19px;
+}
+
+.inputdetails {
+    height: 20px;
+    margin-left: 13px;
+}
+
+#submit {
+    margin-left: 13px;
+    height: 30px;
+}
+
+/* Designing the item container  */
+#itemsbox {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    height: 780px;
+    width: 99%;
+    margin-top: 115px;
+    border: 3px solid green;
+    grid-gap: 76px;
+    justify-content: center;
+
+}
+
+.item {
+    display: flex;
+    height: 182px;
+    width: 220px;
+    border: 2px solid red;
+    margin-top: 10px;
+    transition: all 0.8s ease-in-out;
+
+
+}
+
+.item:hover {
+    scale: 1.2;
+    box-shadow: 1px 3px 8px;
+}
+
+/* Designing the image of each item  */
+.imagebox img {
+    display: flex;
+    height: 149px;
+    width: 220px;
+    z-index: -1;
+}
+
+
+#btn {
+    display: inline-flex;
+    height: 20px;
+    margin-top: 157px;
+    margin-left: -165px;
+
+}
+
+#btn input[type="number"] {
+    display: flex;
+    height: 14px;
+    width: 57px;
+    margin-left: 2px;
+    margin-right: 11px;
+}
+
+/* Designing the container of the testimonials of our customers  */
+
+#testimonials {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 99%;
+    margin-top: 74px;
+    border: 3px solid rgb(79, 22, 192);
+    padding: 10px;
+    gap: 10px;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    height: 420px;
+}
+
+/* Styling the individual review boxes */
+.reviewbox {
+    display: flex;
+    align-items: center;
+    /* Centers content vertically */
+    justify-content: center;
+    height: 367px;
+    width: 314px;
+    border: 2px solid green;
+    flex-shrink: 0;
+    /* Prevents boxes from shrinking */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+#footer {
+    display: flex;
+    height: 98px;
+    width: 99%;
+    margin-top: 14px;
+    border: 3px solid red;
+    justify-content: center;
+    background-color: rgb(241, 238, 238);
+    align-items: center;
+}
+
+#copyright {
+    margin-left: -492px;
+    margin-top: 58px;
+}
